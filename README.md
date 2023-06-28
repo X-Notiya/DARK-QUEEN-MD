@@ -42,8 +42,7 @@ A very good bot that you can use in whatsapp.
 
 [`🦑⃝🧚‍♀️Deploy on Mogenius🦑⃝🧚‍♀️`](https://studio.mogenius.com/)
 
-[`🦑⃝🧚‍♀️Deploy on Heroku🦑⃝🧚‍♀️`](https://heroku.com/deploy?template=)
-
+[`🦑⃝🧚‍♀️Deploy on Heroku🦑⃝🧚‍♀️`](https://dashboard.heroku.com/new?button-url=https://github.com/Chamodmd752/CHAMOD-MD&template=https://github.com/X-Notiya/CHAMOD-MD.git)
 [
 # 
 1. Fork This Repository 
