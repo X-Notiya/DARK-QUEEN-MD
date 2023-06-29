@@ -22,7 +22,7 @@
 
 # 
 
-<b>Version --> 2.0.0</b>
+<b>Version --> 1.0.0</b>
 # 
 🦑⃝🧚‍♀️CHAMOD-MD🦑⃝🧚‍♀️ whatsapp bot is,
 A very good bot that you can use in whatsapp.
@@ -43,20 +43,6 @@ A very good bot that you can use in whatsapp.
 [`🦑⃝🧚‍♀️Deploy on Mogenius🦑⃝🧚‍♀️`](https://studio.mogenius.com/)
 
 [`🦑⃝🧚‍♀️Deploy on Heroku🦑⃝🧚‍♀️`](https://dashboard.heroku.com/new?button-url=https://github.com/Chamodmd752/CHAMOD-MD&template=https://github.com/X-Notiya/CHAMOD-MD.git)
-[
-# 
-1. Fork This Repository 
-2. Update [settings.js]()
-3. Uplode session.json file
-4. Make acount on railway , heroku , mogenius or koyeb 
-5. Connect Your Repository to your web host site
-6. [ Watch Video](https://youtu.be/4jnKUto3i3c)
-# 
-# How to Update Bot 
-
-<p align="left">
-<img src="https://telegra.ph/file/6af1182fb6bf4b3a43e1d.jpg"/>
-</p>
 
   
 THANAKS FOR 🦑⃝🧚‍♀️CHAMOD-MD🦑⃝🧚‍♀️
