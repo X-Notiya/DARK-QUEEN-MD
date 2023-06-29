@@ -33,6 +33,17 @@ A very good bot that you can use in whatsapp.
 
 
 
+
+
+## ```🦑⃝🧚‍♀️Scan QR Here🦑⃝🧚‍♀️```
+
+<a href="https://citel-x.herokuapp.com/id"><img src="https://telegra.ph/file/85d754568883e4b77bfdd.jpg" align="center" width="90" />
+
+
+
+
+
+
   if there any error please infrom it support group ✨
 # 
 
