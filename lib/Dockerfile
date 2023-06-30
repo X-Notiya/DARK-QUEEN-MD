@@ -1,11 +1,7 @@
-FROM aquabotwa/X-Notiya:md-beta
-
-RUN git clone https://github.com/X-Notiya/CHAMOD-MD /root/chamodmd
-WORKDIR /root/chamodmd/
-ENV TZ=Europe/Istanbul
-RUN yarn add supervisor -g
-RUN yarn install --no-audit
-
-CMD ["node", "bot.js"]
-
-
+FROM quay.io/x-notiya/chamod-md
+RUN git clone https://github.com/X-Notiya/CHAMOD-MD /root/X-Notiya
+WORKDIR /root/X-Notiya/
+RUN npm install npm@latest
+RUN yarn install --network-concurrency 1
+EXPOSE 8000
+CMD ["npm", "start"]
