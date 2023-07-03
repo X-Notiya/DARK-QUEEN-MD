@@ -1,17 +1,17 @@
 {
-               "name": "X-Notiya",
+               "name": "secktor-md",
                "version": "0.0.7",
-               "description": "Multi device whatsapp bot by 🦑⃝🧚‍♀️CHAMOD-MD🦑⃝🧚‍♀️.",
+               "description": "Multi device whatsapp bot by X-Notiya.",
                "main": "lib/client.js",
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
                 "start": "pm2 start lib/client.js --deep-monitoring --attach --name secktor",
-                "stop": "pm2 stop 🦑⃝🧚‍♀️CHAMOD-MD🦑⃝🧚‍♀️"
+                "stop": "pm2 stop secktor"
                 },
                "author": "X-Notiya",
               "dependencies": {
-                       "@X-Notiya/CHAMOD-MD": "latest", 
+                       "@sampandey001/baileys": "latest", 
                        "@adiwajshing/keyed-db": "^0.2.4",
                        "awesome-phonenumber": "^3.3.0",
                        "anime-character-random": "latest",
@@ -53,8 +53,8 @@
                        "@shineiichijo/marika": "^2.0.3",           
                        "translatte": "^3.0.1",
                        "util": "^0.12.4",           
-                       "X-Notiya-pack": "latest",
-                       "ytdlX-Notiya": "latest",
+                       "secktor-pack": "latest",
+                       "ytdl-secktor": "latest",
                        "pastebin-js": "latest",
                        "fb-info-video":"^1.0.2",
                        "wa-sticker-formatter": "^4.3.2"
