@@ -1,5 +1,5 @@
 while true
 do
-echo "Starting Secktor-Md..."
-node lib/client.js
+echo "Starting CHAMOD-MD..."
+node client.js
 done
