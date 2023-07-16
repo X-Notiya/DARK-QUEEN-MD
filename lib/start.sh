@@ -1,5 +1,5 @@
 while true
 do
 echo "Starting Secktor-Md..."
-node lib/notiya.js
+node lib/client.js
 done
