@@ -1,5 +1,5 @@
 while true
 do
 echo "Starting CHAMOD-MD..."
-node client.js
+node lib/client.js
 done
