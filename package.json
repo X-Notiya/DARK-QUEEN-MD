@@ -2,11 +2,11 @@
                "name": "chamod-md",
                "version": "0.0.7",
                "description": "Multi device whatsapp bot by X-Notiya.",
-               "main": "index.js",
+               "main": "lib/client.js",
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start index.js --deep-monitoring --attach --name darkqueen",
+                "start": "pm2 start lib/client.js --deep-monitoring --attach --name darkqueen",
                 "stop": "pm2 stop darkqueen"
                 },
                "author": "X-Notiya",
