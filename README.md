@@ -1,8 +1,8 @@
 <p align="center"> 
-<b>༺═════════[🦑⃝🧚‍♀️CHAMOD-MD🦑⃝🧚‍♀️]══════════༻</b>
+<b>༺═════════[𝐷𝛥𝑅𝛫 𝑄𝑈𝛯𝛯𝛮 𝛭𝐷]══════════༻</b>
 </p>
 <p align="center"> 
-<img src="https://telegra.ph/file/85d754568883e4b77bfdd.jpg" width="300" height="300"/>
+<img src="https://telegra.ph/file/2410f13a9a02224c996af.jpg" width="300" height="300"/>
 </p>
 <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=🦑⃝🧚‍♀️CHAMOD-MD🦑⃝🧚‍♀️+Whatsapp+Multidevice+Bot+;Created+By+X-Notiya" alt="">
