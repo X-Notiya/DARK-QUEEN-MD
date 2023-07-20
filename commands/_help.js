@@ -4,8 +4,8 @@
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
  * @project_name : Secktor-Md
- * @author : X-Notiya <https://github.com/SamaPndey001>
- * @description : Secktor-Md Multi-functional whatsapp bot.
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
@@ -24,7 +24,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "🧚‍♂️",
+            react: "✨",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -32,7 +32,7 @@ Secktor.cmd({
             if (text.split(" ")[0]) {
                 let arr = [];
                 const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-                if (!cmd) return await citel.reply("*🦑⃝🧚‍♀️❌No Such commands.*");
+                if (!cmd) return await citel.reply("*❌No Such commands.*");
                 else arr.push(`*🍁Command:* ${cmd.pattern}`);
                 if (cmd.category) arr.push(`*🧩Category:* ${cmd.category}`);
                 if (cmd.alias) arr.push(`*🧩Alias:* ${cmd.alias}`);
@@ -53,26 +53,25 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
+                let str = `╭────《 ` +🍁𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃🍁 + ` 》─────⊷\n`
                 str +=
                     '```' + `│ ╭──────────────◆
-│ │ 🦑⃝🧚‍♀️User:- ${citel.pushName}
-│ │ 🦑⃝🧚‍♀️Theme:- ${tlang().title}
-│ │ 🦑⃝🧚‍♀️Prefix:- [ ${prefix} ]
-│ │ 🦑⃝🧚‍♀️Owner:- ${Config.ownername}
-│ │ 🦑⃝🧚‍♀️Plugins:- ${commands.length}
-│ │ 🦑⃝🧚‍♀️Users:- ${total}
-│ │ 🦑⃝🧚‍♀️Uptime:- ${runtime(process.uptime())}
-│ │ 🦑⃝🧚‍♀️Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ 🦑⃝🧚‍♀️Time:- ${time}
-│ │ 🦑⃝🧚‍♀️Date:- ${date}
+│ │ 🧚‍♂️ᴜꜱᴇʀ🧚‍♂️:- ${citel.pushName}
+│ │ 🧚‍♂️ᴛʜᴇᴍᴇꜱ🧚‍♂️:- ${tlang().title}
+│ │ 🧚‍♂️ᴏᴡɴᴇʀ🧚‍♂️:- ${Config.ownername}
+│ │ 🧚‍♂️ᴘʟᴜɢɪɴꜱ🧚‍♂️:- ${commands.length}
+│ │ 🧚‍♂️ᴜꜱᴇʀ🧚‍♂️:- ${total}
+│ │ 🧚‍♂️ᴜᴘᴛɪᴍᴇ🧚‍♂️:- ${runtime(process.uptime())}
+│ │ 🧚‍♂️ᴍᴇᴍ🧚‍♂️:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│ │ 🧚‍♂️ᴛɪᴍᴇ🧚‍♂️:- ${time}
+│ │ 🧚‍♂️ᴅᴀᴛᴇ🧚‍♂️:- ${date}
 │ ╰──────────────◆
 ╰───────────────⊷\n
 ` + '```'
                 for (const category in cmds) 
                 {
-                   str += `╭────❏ 🦑⃝🧚‍♀️*${tiny(category)}* ❏\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏ *${tiny(category)}* ❏\n` ;      
+                   str += `╭────❏ 🍁${tiny(category)}🍁❏\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏🍁${tiny(category)}🍁 ❏\n` ;      
                         for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
                         str += `╰━━━━━━━━━━━━━──⊷\n`  ;
                         break ;
@@ -82,7 +81,7 @@ Secktor.cmd({
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                str+= `ᴄʀᴀᴛᴇᴅ ʙʏ ᴄʜᴀᴍᴏᴅ`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -93,32 +92,31 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "list",
-            desc: "list menu",
+            pattern: "alive",
+            desc: "alive",
             category: "general"
         },
         async(Void, citel) => {
             const { commands } = require('../lib');
             let str = `
-╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
+╭━━〘 ` 🍁𝐷𝛥𝑅𝛫 𝑄𝑈𝛯𝛯𝛮🍁 ` 〙━━──⊷`
             str += `
-┃ 🧚‍♂️╭──────────────      
-┃ 🧚‍♂️│ 🦑⃝🧚‍♀️User: ${citel.pushName}
-┃ 🧚‍♂️│ 🦑⃝🧚‍♀️Theme: ${tlang().title}
-┃ 🧚‍♂️│ 🦑⃝🧚‍♀️Prefix: ${prefix}
-┃ 🧚‍♂️│ 🦑⃝🧚‍♀️Owner: ${Config.ownername}
-┃ 🧚‍♂️│ 🦑⃝🧚‍♀️Commands: ${commands.length}
-┃ 🧚‍♂️│ 🦑⃝🧚‍♀️Uptime: ${runtime(process.uptime())}
-┃ 🧚‍♂️│ 🦑⃝🧚‍♀️Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ 🧚‍♂️│  
-┃ 🧚‍♂️╰───────────
-╰━━━━━━━━━━━──⊷\n`
-for (let i = 0; i < commands.length; i++) 
+┃           
+┃  🍁⃝𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃⃝🍁          
+┃ ⛥╭──────────────      
+┃ ⛥│ 🧚‍♂️⃝ᴜꜱᴇʀ⃝🧚‍♂️: ${citel.pushName}
+┃ ⛥│ 🧚‍♂️⃝ᴏᴡɴᴇʀ⃝🧚‍♂️: ${Config.ownername}
+┃ ⛥│ 🧚‍♂️⃝ᴜᴘᴛɪᴍᴇ⃝🧚‍♂️: ${runtime(process.uptime())}
+┃ ⛥│ 🧚‍♂️⃝ᴍᴇᴍ⃝🧚‍♂️: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ ⛥│  
+┃ ⛥╰ᴄʀᴀᴛᴇᴅ ʙʏ ᴄʜᴀᴍᴏᴅ╍❑
+╰━━━━━━━━━━━❑\n`
+for (let i = 0; i < commands.length; i) 
 {
      if(commands[i].pattern==undefined) continue
-     str +=       `╭ ${i+1} *${fancytext(commands[i].pattern,1)}*\n` 
+     str      `╭ ${i1} *${fancytext(commands[i].pattern,1)}*\n` 
      if(commands[i].desc=undefined) commands[i].desc=""
-     str += `╰➛ ${fancytext(commands[i].desc,1)}\n`
+     str  `╰➛ ${fancytext(commands[i].desc,1)}\n`
 }
             return await Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
         }
@@ -128,7 +126,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
-        react: "🧚‍♂️",
+        react: "🙂",
         filename: __filename
     },
     async(Void, citel) => {
@@ -172,7 +170,7 @@ async(Void, citel, text) => {
  const { commands } = require('../lib');
  let arr = [];
         const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-        if (!cmd) return await citel.reply("*🦑⃝🧚‍♀️❌No Such commands.*");
+        if (!cmd) return await citel.reply("*❌No Such commands.*");
         else arr.push(`*🍁Command:* ${cmd.pattern}`);
         if (cmd.category) arr.push(`*🧩Type:* ${cmd.category}`);
         if(cmd.filename) arr.push(`✨FileName: ${cmd.filename}`)
