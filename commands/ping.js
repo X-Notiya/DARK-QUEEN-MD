@@ -4,8 +4,8 @@
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
  * @project_name : Secktor-Md
- * @author : SamaPndey001 <https://github.com/SamaPndey001>
- * @description : X-Notiya,A Multi-functional whatsapp bot.
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
@@ -19,9 +19,9 @@ Secktor.cmd({
     },
     async(Void, citel) => {
         var inital = new Date().getTime();
-        const { key } = await Void.sendMessage(citel.chat, {text: '🦑⃝🧚‍♀️𝚙𝚒𝚗𝚐🦑⃝🧚‍♀️'});
+        const { key } = await Void.sendMessage(citel.chat, {text: '```Ping!!!```'});
         var final = new Date().getTime();
-       // await CHAMOD-MD.sleep(1000)
-       return await Void.sendMessage(citel.chat, {text: '*🦑⃝🧚‍♀️Pong*\n *' + (final - inital) + ' ms* ', edit: key});
+       // await Secktor.sleep(1000)
+       return await Void.sendMessage(citel.chat, {text: '❮❮❮Pong\n ' + (final - inital) + ' ms❯❯❯ ', edit: key});
     }
 );
