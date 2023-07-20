@@ -53,25 +53,26 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────《 ` +🍁𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃🍁 + ` 》─────⊷\n`
+                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
                     '```' + `│ ╭──────────────◆
-│ │ 🧚‍♂️ᴜꜱᴇʀ🧚‍♂️:- ${citel.pushName}
-│ │ 🧚‍♂️ᴛʜᴇᴍᴇꜱ🧚‍♂️:- ${tlang().title}
-│ │ 🧚‍♂️ᴏᴡɴᴇʀ🧚‍♂️:- ${Config.ownername}
-│ │ 🧚‍♂️ᴘʟᴜɢɪɴꜱ🧚‍♂️:- ${commands.length}
-│ │ 🧚‍♂️ᴜꜱᴇʀ🧚‍♂️:- ${total}
-│ │ 🧚‍♂️ᴜᴘᴛɪᴍᴇ🧚‍♂️:- ${runtime(process.uptime())}
-│ │ 🧚‍♂️ᴍᴇᴍ🧚‍♂️:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ 🧚‍♂️ᴛɪᴍᴇ🧚‍♂️:- ${time}
-│ │ 🧚‍♂️ᴅᴀᴛᴇ🧚‍♂️:- ${date}
+│ │ 🍁ᴜꜱᴇʀ🍁:- ${citel.pushName}
+│ │ 🍁ᴛʜᴇᴍᴇ🍁:- ${tlang().title}
+│ │ 🍁ᴘʀᴇꜰɪx🍁:- [ ${prefix} ]
+│ │ 🍁ᴏᴡɴᴇʀ🍁:- ${Config.ownername}
+│ │ 🍁ᴘʟᴜɢɪɴꜱ🍁:- ${commands.length}
+│ │ 🍁ᴜꜱᴇʀꜱ🍁:- ${total}
+│ │ 🍁ᴜᴘᴛɪᴍᴇ🍁:- ${runtime(process.uptime())}
+│ │ 🍁ᴍᴇᴍ🍁:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│ │ 🍁ᴛɪᴍᴇ🍁:- ${time}
+│ │ 🍁ᴅᴀᴛᴇ🍁:- ${date}
 │ ╰──────────────◆
 ╰───────────────⊷\n
 ` + '```'
                 for (const category in cmds) 
                 {
-                   str += `╭────❏ 🍁${tiny(category)}🍁❏\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏🍁${tiny(category)}🍁 ❏\n` ;      
+                   str += `╭────❏ *${tiny(category)}* ❏\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏ *${tiny(category)}* ❏\n` ;      
                         for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
                         str += `╰━━━━━━━━━━━━━──⊷\n`  ;
                         break ;
@@ -81,7 +82,7 @@ Secktor.cmd({
                    }
   
                 }
-                str+= `ᴄʀᴀᴛᴇᴅ ʙʏ ᴄʜᴀᴍᴏᴅ`
+                str/= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*MADE BY KALINDU ❤️* `
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -92,31 +93,32 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "alive",
-            desc: "alive",
+            pattern: "list",
+            desc: "list menu",
             category: "general"
         },
         async(Void, citel) => {
             const { commands } = require('../lib');
             let str = `
-╭━━〘 ` 🍁𝐷𝛥𝑅𝛫 𝑄𝑈𝛯𝛯𝛮🍁 ` 〙━━──⊷`
+╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
             str += `
-┃           
-┃  🍁⃝𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃⃝🍁          
 ┃ ⛥╭──────────────      
-┃ ⛥│ 🧚‍♂️⃝ᴜꜱᴇʀ⃝🧚‍♂️: ${citel.pushName}
-┃ ⛥│ 🧚‍♂️⃝ᴏᴡɴᴇʀ⃝🧚‍♂️: ${Config.ownername}
-┃ ⛥│ 🧚‍♂️⃝ᴜᴘᴛɪᴍᴇ⃝🧚‍♂️: ${runtime(process.uptime())}
-┃ ⛥│ 🧚‍♂️⃝ᴍᴇᴍ⃝🧚‍♂️: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ ⛥│ User: ${citel.pushName}
+┃ ⛥│ Theme: ${tlang().title}
+┃ ⛥│ Prefix: ${prefix}
+┃ ⛥│ Owner: ${Config.ownername}
+┃ ⛥│ Commands: ${commands.length}
+┃ ⛥│ Uptime: ${runtime(process.uptime())}
+┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 ┃ ⛥│  
-┃ ⛥╰ᴄʀᴀᴛᴇᴅ ʙʏ ᴄʜᴀᴍᴏᴅ╍❑
-╰━━━━━━━━━━━❑\n`
-for (let i = 0; i < commands.length; i) 
+┃ ⛥╰───────────
+╰━━━━━━━━━━━──⊷\n`
+for (let i = 0; i < commands.length; i++) 
 {
      if(commands[i].pattern==undefined) continue
-     str      `╭ ${i1} *${fancytext(commands[i].pattern,1)}*\n` 
+     str +=       `╭ ${i+1} *${fancytext(commands[i].pattern,1)}*\n` 
      if(commands[i].desc=undefined) commands[i].desc=""
-     str  `╰➛ ${fancytext(commands[i].desc,1)}\n`
+     str += `╰➛ ${fancytext(commands[i].desc,1)}\n`
 }
             return await Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
         }
@@ -126,7 +128,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
-        react: "🙂",
+        react: "💜",
         filename: __filename
     },
     async(Void, citel) => {
