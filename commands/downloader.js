@@ -111,7 +111,7 @@ cmd({
                 if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
-                citel.reply('🍁𝙳𝙰𝚁𝙺 𝚀𝚄𝙴𝙴𝙽 ᴍᴅ ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ..🍁.')
+                citel.reply('*Downloadig:* '+titleYt)
                 const stream = ytdl(urlYt, {
                         filter: (info) => info.itag == 22 || info.itag == 18,
                     })
@@ -129,7 +129,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` 💖 ᴛɪᴛʟᴇ : ${titleYt}\n\n 💃 ꜰɪʟᴇ ꜱɪᴢᴇ : ${fileSizeInMegabytes} MB\n\n 💛 ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ 𝙳𝙰𝚁𝙺 𝚀𝚄𝙴𝙴𝙽-ᴍᴅ\n\n 🍁 ᴄʀᴇᴀᴛᴇᴅ ʙʏ 𝙲𝙷𝙰𝙼𝙾𝙳𝙷🍁`,
+                        caption: ` ⿻ Title : ${titleYt}\n ⿻ File Size : ${fileSizeInMegabytes} MB`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
@@ -146,7 +146,7 @@ cmd({
                  Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                  return fs.unlinkSync(`./${randomName}`);
                 } else {
-                    citel.reply(`❌ ꜰɪʟᴇ ꜱɪᴢᴇ ʙɪɢɢᴇʀ ᴛʜᴀɴ 100ᴍʙ.`);
+                    citel.reply(`❌ File size bigger than 100mb.`);
                 }
                 return fs.unlinkSync(`./${randomName}`);      
 
@@ -171,16 +171,16 @@ cmd({
                     url: anu.thumbnail,
                 },
                 caption: `
-╭───────────────❍
-│🦸‍♂️ ${tlang().title} 
-│  *𝙳𝙰𝚁𝙺 𝚀𝚄𝙴𝙴𝙽-ʏᴏᴜᴛᴜʙᴇ-ᴘʟᴀʏᴇʀ* 🦚
-│🦸‍♂️ *ᴛɪᴛʟᴇ:* ${anu.title}
-│🦸‍♂️ *ᴅᴜʀᴀᴛɪᴏɴ:* ${anu.timestamp}
-│🦸‍♂️ *ᴠɪᴇᴡᴇʀꜱ:* ${anu.views}
-│🦸‍♂️ *ᴜᴘʟᴏᴀᴅᴇᴅ:* ${anu.ago}
-│🦸‍♂️ *ᴀᴜᴛʜᴏʀ:* ${anu.author.name}
-╰────────────────❍
-⦿ *ᴜʀʟ* : ${anu.url}
+╭───────────────◆
+│⿻ ${tlang().title} 
+│  *Youtube Player* ✨
+│⿻ *Title:* ${anu.title}
+│⿻ *Duration:* ${anu.timestamp}
+│⿻ *Viewers:* ${anu.views}
+│⿻ *Uploaded:* ${anu.ago}
+│⿻ *Author:* ${anu.author.name}
+╰────────────────◆
+⦿ *Url* : ${anu.url}
 `,
                 footer: tlang().footer,
                 headerType: 4,
@@ -301,7 +301,7 @@ cmd({
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply('🍁𝙳𝙰𝚁𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝚄𝙻𝚃𝙸-𝙳𝙴𝚅𝙸𝙲𝙴 𝙱𝙾𝚃 𝙾𝙽 𝚈𝙾𝚄 𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 🍁...')
+            citel.reply('*Downloadig:* '+titleYt)
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
@@ -388,7 +388,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: `💖 ᴛɪᴛʟᴇ : ${titleYt}\n\n 💃 ꜰɪʟᴇ ꜱɪᴢᴇ : ${fileSizeInMegabytes} MB\n\n 💛 ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ 🍁𝐷𝛥𝑅𝛫 𝑄𝑈𝛯𝛯𝛮 𝛭𝐷🍁\n\n 🙂 ᴄʀᴇᴀᴛᴇᴅ ʙʏ 𝙲𝙷𝙰𝙼𝙾𝙳𝙷`,
+                        caption: ` ⿻ Title : ${titleYt}\n ⿻ File Size : ${fileSizeInMegabytes} MB`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
