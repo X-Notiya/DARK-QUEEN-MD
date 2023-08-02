@@ -1,15 +1,15 @@
 {
-               "name": "Sonic-Md",
+               "name": "Dark-Queen",
                "version": "4.0",
                "description": "Multi device whatsapp bot by Kalindu.",
                "main": "lib/client.js",
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name sonic-md",
-                "stop": "pm2 stop sonic-md"
+                "start": "pm2 start lib/client.js --deep-monitoring --attach --name Dark-Queen",
+                "stop": "pm2 stop Dark-Queen"
                 },
-               "author": "Kalindu",
+               "author": "x-notiya",
               "dependencies": {
                        "@sampandey001/baileys": "latest", 
                        "@adiwajshing/keyed-db": "^0.2.4",
@@ -85,10 +85,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/KALINDU-LK/SONIC-MD.git"
+                 "url": "git+https://github.com/X-Notiya/DARK-QUEEN-MD.git"
                   },
                  "bugs": {
-                 "url": "https://github.com/KALINDU-LK/SONIC-MD/issues"
+                 "url": "https://github.com/X-Notiya/DARK-QUEEN-MD/issues"
                   },
-                 "homepage": "https://github.com/KALINDU-LK/SONIC-MD#readme"
+                 "homepage": "https://github.com/X-Notiya/DARK-QUEEN-MD#readme"
                   }
