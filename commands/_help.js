@@ -24,7 +24,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "✨",
+            react: " 💕",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -32,7 +32,7 @@ Secktor.cmd({
             if (text.split(" ")[0]) {
                 let arr = [];
                 const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-                if (!cmd) return await citel.reply("*❌No Such commands.*");
+                if (!cmd) return await citel.reply("❮❮*❌No Such commands.*❯❯");
                 else arr.push(`*🍁Command:* ${cmd.pattern}`);
                 if (cmd.category) arr.push(`*🧩Category:* ${cmd.category}`);
                 if (cmd.alias) arr.push(`*🧩Alias:* ${cmd.alias}`);
@@ -55,42 +55,37 @@ Secktor.cmd({
                 let total = await sck1.countDocuments()
                 let str = `╔═══《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》═══❍\n`
                 str +=
-                    '```' + `║═════════════❍
-║ User:- ${citel.pushName}
-║ Theme:- 𝙲𝙷𝙰𝙼𝙾𝙳𝙷
-║ Prefix:- [ ${prefix} ]
-║ Owner:- ${Config.ownername}
-║ Plugins:- ${commands.length}
-║ Users:- ${total}
-║ Uptime:- ${runtime(process.uptime())}
-║ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-║ Time:- ${time}
-║ Date:- ${date}
+                    '*' + `║═════════════❍
+║ USER:- ${citel.pushName}
+║ THEME:- ${tlang().title}
+║ PREFIX:-  ${prefix} 
+║ OWNER:- ${Config.ownername}
+║ PUUGINS:- ${commands.length}
+║ USERS:- ${total}
+║ UPTIME:- ${runtime(process.uptime())}
+║ MEMORY:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+║ TIME:- ${time}
+║ DATE:- ${date}
 ║═══════════════❍
-║ 💕⃢🧚‍♂️𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃🧚‍♂️⃢ 💕
-╚═══════════════❍
-╔════❮𝙳𝙾𝚆𝙾𝙰𝙳 𝙲𝙼𝙳❯══❍
-║🧚‍♂️𝚂𝙾𝙽𝙶
-║🧚‍♂️𝙿𝙻𝙰𝚈
-║🧚‍♂️𝚈𝚃𝚂
-║🧚‍♂️𝙳𝙾𝚆𝙽𝙰𝙿𝙺
+║  💕⃢𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴⃢ 💕
 ╚═══════════════❍\n
-` + '```'
+
+` + '*'
                 for (const category in cmds) 
                 {
-                   str += `╔═❮ *${tiny(category)}*❯══❍\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╔═❮ *${tiny(category)}*\n❯══❍` ;      
-                        for (const plugins of cmds[category]) { str += `║🧚‍♂️ ${fancytext(plugins,1)}\n` ; }
+                   str += `╔═❮ ${tiny(category)}❯══❍\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `╔═❮ ${tiny(category)}\n❯══❍` ;      
+                        for (const plugins of cmds[category]) { str += `║🧚‍♂️⃞➪ ${fancytext(plugins,1)}\n` ; }
                         str += `╚════════════❍\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `║🧚‍♂️ ${fancytext(plugins,1)}\n` ; }
-                         str += `╚══════════❍
-                         𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 𝙼𝚁.𝙽𝙾𝚃𝙸𝚈𝙰\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `║🧚‍♂️⃞➪ ${fancytext(plugins,1)}\n` ; }
+                         str += `╚══════════❍\n`  ; 
                    }
   
                 }
-                str+= `𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 `
+                str+= `ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ
+                𝐷𝛥𝑅𝛫 𝑄𝑈𝛯𝛯𝛮 𝛭𝐷`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -136,7 +131,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
-        react: "💜",
+        react: "🍁",
         filename: __filename
     },
     async(Void, citel) => {
