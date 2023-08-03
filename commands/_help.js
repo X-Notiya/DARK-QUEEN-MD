@@ -57,7 +57,7 @@ Secktor.cmd({
                 str +=
                     '```' + `║═════════════❍
 ║ User:- ${citel.pushName}
-║ Theme:- ${tlang().title}
+║ Theme:- 𝙲𝙷𝙰𝙼𝙾𝙳𝙷
 ║ Prefix:- [ ${prefix} ]
 ║ Owner:- ${Config.ownername}
 ║ Plugins:- ${commands.length}
@@ -68,6 +68,12 @@ Secktor.cmd({
 ║ Date:- ${date}
 ║═══════════════❍
 ║ 💕⃢🧚‍♂️𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃🧚‍♂️⃢ 💕
+╚═══════════════❍
+╔════❮𝙳𝙾𝚆𝙾𝙰𝙳 𝙲𝙼𝙳❯══❍
+║🧚‍♂️𝚂𝙾𝙽𝙶
+║🧚‍♂️𝙿𝙻𝙰𝚈
+║🧚‍♂️𝚈𝚃𝚂
+║🧚‍♂️𝙳𝙾𝚆𝙽𝙰𝙿𝙺
 ╚═══════════════❍\n
 ` + '```'
                 for (const category in cmds) 
@@ -79,11 +85,12 @@ Secktor.cmd({
                         break ;
                    }
                    else { for (const plugins of cmds[category]) { str += `║🧚‍♂️ ${fancytext(plugins,1)}\n` ; }
-                         str += `╚══════════❍\n`  ; 
+                         str += `╚══════════❍
+                         𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 𝙼𝚁.𝙽𝙾𝚃𝙸𝚈𝙰\n`  ; 
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                str+= `𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 `
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
