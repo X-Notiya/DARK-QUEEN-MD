@@ -24,7 +24,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: " 💕",
+            react: "🧚‍♂️",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -55,9 +55,9 @@ Secktor.cmd({
                 let total = await sck1.countDocuments()
                 let str = `╔═══《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》═══❍\n`
                 str +=
-                    '```' + `║═════════════❍
-║ User:- ${citel.pushName}
-║ Theme:- ${tlang().title}
+                    '*' + `║═════════════❍
+║ USER:- ${citel.pushName}
+║ THEMES:- ${tlang().title}
 ║ Prefix:- [ ${prefix} ]
 ║ Owner:- ${Config.ownername}
 ║ Plugins:- ${commands.length}
@@ -69,21 +69,22 @@ Secktor.cmd({
 ║═══════════════❍
 ║ 𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃
 ╚═══════════════❍\n
-` + '```'
+` + '*'
                 for (const category in cmds) 
                 {
                    str += `╔═❮ *${tiny(category)}*❯══❍\n` ;
                    if(text.toLowerCase() == category.toLowerCase()){ str = `╔═❮ *${tiny(category)}*\n❯══❍` ;      
-                        for (const plugins of cmds[category]) { str += `║🧚‍♂️ ${fancytext(plugins,1)}\n` ; }
+                        for (const plugins of cmds[category]) { str += `║🧚‍♂️⃢➪ ${fancytext(plugins,1)}\n` ; }
                         str += `╚════════════❍\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `║🧚‍♂️ ${fancytext(plugins,1)}\n` ; }
+                   else { for (const plugins of cmds[category]) { str += `║🧚‍♂️⃢➪ ${fancytext(plugins,1)}\n` ; }
                          str += `╚══════════❍\n`  ; 
                    }
   
                 }
-                str+= `ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ `
+                str+= `ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ 
+                 𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
