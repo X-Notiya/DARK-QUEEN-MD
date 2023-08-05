@@ -55,21 +55,19 @@ Secktor.cmd({
                 let total = await sck1.countDocuments()
                 let str = `╔═══《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》═══❍\n`
                 str +=
-                    '*' + `║═════════════❍
-║ USER:- ${citel.pushName}
-║ THEMES:- ${tlang().title}
-║ Prefix:- [ ${prefix} ]
-║ Owner:- ${Config.ownername}
-║ Plugins:- ${commands.length}
-║ Users:- ${total}
-║ Uptime:- ${runtime(process.uptime())}
-║ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-║ Time:- ${time}
-║ Date:- ${date}
-║═══════════════❍
-║ 𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃
+                    '' + `║══════════❍
+╠══════════❍
+║𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴
+╠══════════❍
+║ 𝐔𝐒𝐄𝐑:- ${citel.pushName}
+║ 𝐓𝐇𝐄𝐌𝐄𝐒:- ${tlang().title}
+║ 𝐏𝐑𝐄𝐅𝐈𝐗:- [ ${prefix} ]
+║ 𝐎𝐖𝐍𝐄𝐑:- ${Config.ownername}
+╚══════════❍
+╔═══════════════❍
+║𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓
 ╚═══════════════❍\n
-` + '*'
+` + ''
                 for (const category in cmds) 
                 {
                    str += `╔═❮ *${tiny(category)}*❯══❍\n` ;
@@ -84,7 +82,7 @@ Secktor.cmd({
   
                 }
                 str+= `ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ.ɴᴏᴛɪʏᴀ 
-                 𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃`
+𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴 𝚳𝐃`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
