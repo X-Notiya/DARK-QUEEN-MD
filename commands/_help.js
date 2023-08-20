@@ -53,30 +53,30 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `🍁 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 🍁\n`
+                let str = `🍁 ` + fancytext(Config.ownername.split('DARK QUEEN MD')[0], 58) + ` 🍁\n`
                 str +=
-                    '' + `𝗛𝗜 ${citel.pushName}
-╔══════❍
-║𝐃𝚫𝚪𝐊 𝐐𝐔𝚵𝚵𝚴
-╠══════════❍
-║ 𝐔𝐒𝐄𝐑:- ${citel.pushName}
-║ 𝐓𝐇𝐄𝐌𝐄𝐒:- ${tlang().title}
-║ 𝐏𝐑𝐄𝐅𝐈𝐗:-  ${prefix} 
-║ 𝐎𝐖𝐍𝐄𝐑:- ᴍʀ•ɴᴏᴛɪʏᴀ
+                    '' + `💓𝗵𝗲𝗹𝗹𝗼𝘄 ${citel.pushName}💓
+╭───────────●
+╎👻𝗴𝗼𝗼𝗱 𝗺𝗼𝗿𝗻𝗶𝗻𝗴😆
+╰───────────●
+╔══════════❍
+║𝐎𝐖𝐍 𝐍𝐀𝐌𝐄 💓ᴍʀ•ɴᴏᴛɪʏᴀ💓
+║𝐎𝐖𝐍 𝐍𝐔𝐁 💓+94715491788💓
+║𝐁𝐎𝐓 𝐒𝐏𝐄𝐄𝐃 💓000.23💓
+║𝐌𝐄𝐌𝐎𝐑𝐘 💓64GB💓
 ╚══════════❍
-╔═══════════════❍
-║𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐓
-╚═══════════════❍\n
+    ╭─────────●
+    ╎𝙘𝙤𝙢𝙢𝙖𝙣𝙙 𝙡𝙞𝙨𝙩
+    ╰─────────●\n
 ` + ''
                 for (const category in cmds) 
                 {
-                   str += `╔═❮ *${tiny(category)}*❯══❍\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╔═❮ *${tiny(category)}*\n❯══❍` ;      
+                   str += `╔═❋${tiny(category)}❋══❍\n` ;                   if(text.toLowerCase() == category.toLowerCase()){ str = `╔═❋ ${tiny(category)}\n❋══❍` ;      
                         for (const plugins of cmds[category]) { str += `║🍁⃞➢ ${fancytext(plugins,1)}\n` ; }
                         str += `╚════════════❍\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `║ 💕⃞➢ ${fancytext(plugins,1)}\n` ; }
+                   else { for (const plugins of cmds[category]) { str += `║ 💓⃢⃚͋⃜⃛͠☬⃝͠●͢͠ ${fancytext(plugins,1)}\n` ; }
                          str += `╚══════════❍\n`  ; 
                    }
   
