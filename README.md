@@ -46,7 +46,7 @@ A very good bot that you can use in whatsapp.
 
   if there any error please infrom it support group ✨
 # 
-
+https://railway.app/template/iyVviq?referralCode=nJmhOk
 [`🦑⃝🧚‍♀️Deploy on Railway🦑⃝🧚‍♀️`](https://railway.app?referralCode=FnnJ_C)
 
 [`🦑⃝🧚‍♀️Deploy on Koyeb🦑⃝🧚‍♀️`](https://app.koyeb.com/)
@@ -55,5 +55,5 @@ A very good bot that you can use in whatsapp.
 
 [![Deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/X-Notiya/CHAMOD-MD&template=https://github.com/X-Notiya/CHAMOD-MD.git)
 
-  
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/iyVviq?referralCode=nJmhOk)  
 THANAKS FOR 🦑⃝🧚‍♀️CHAMOD-MD🦑⃝🧚‍♀️
