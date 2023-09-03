@@ -53,7 +53,7 @@ https://railway.app/template/iyVviq?referralCode=nJmhOk
 
 [![Deploy on Mogenius](https://studio.mogenius.com/)
 
-[![Deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/X-Notiya/CHAMOD-MD&template=https://github.com/X-Notiya/CHAMOD-MD.git)
+[![Deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/X-Notiya/DARK-QUEEN-MD&template=https://github.com/X-Notiya/DARK-QUEEN-MD.git)
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/iyVviq?referralCode=nJmhOk)  
 THANAKS FOR 🦑⃝🧚‍♀️CHAMOD-MD🦑⃝🧚‍♀️
